@@ -361,10 +361,10 @@ public class Stock extends javax.swing.JFrame {
 
     private void bt_refreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_refreshActionPerformed
         // TODO add your handling code here:
-        createFolder();
-        readFile("\\dataItems.txt");
-        countLines2("\\dataItems.txt");
-        checkStock("\\dataItems.txt");
+        //createFolder();
+        //readFile("\\dataItems.txt");
+        //countLines2("\\dataItems.txt");
+        //checkStock("\\dataItems.txt");
     }//GEN-LAST:event_bt_refreshActionPerformed
 
     private void bt_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_backActionPerformed
