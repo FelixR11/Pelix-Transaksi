@@ -85,7 +85,7 @@ public class Stock extends javax.swing.JFrame {
                 if (i==(ln-6)){
                     break;
                 }
-                for(int k=1; k<=2; k++){
+                for(int k=1; k<=1; k++){
                     raf.readLine();
                 }
             }
@@ -404,10 +404,23 @@ public class Stock extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Stock().setVisible(true);
+                Stock st = new Stock();
+                st.launch();
             }
         });
     }
+    
+    
+    public void launch() {
+        Stock st = new Stock();
+        st.setVisible(true);
+        st.setTitle("Stok");
+        st.createFolder();
+        st.readFile("\\dataItems.txt");
+        st.countLines2("\\dataItems.txt");
+        st.checkStock("\\dataItems.txt");
+    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_back;
